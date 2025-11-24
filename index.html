@@ -4,120 +4,103 @@
 <meta charset="UTF-8">
 <title>For You, My Tatlı 💕</title>
 <style>
-body {
-   
-</div>
-
-<!-- REASONS -->
-<div id="reasons" class="container">
-<h2>Reasons I Love You 💕</h2>
-
-<p>• Your music taste<br>
-• Your eyes<br>
-• Your personality<br>
-• The way you talk to me<br>
-• The way you sing<br>
-• Your interests<br>
-• How you care for me<br>
-• How safe you make me feel<br>
-• How you treat me<br>
-• How you love<br>
-<br>I could go on forever…</p>
-
-<a class="button" href="#top">⬆️ Back to Top</a>
-</div>
-
-<!-- SONGS PAGE -->
-<div id="songs" class="container">
-<h2>Your Songs 🎶</h2>
-
-<p>Tap to play each one:</p>
-
-<p>Chop Suey</p>
-<audio controls><source src="CHOP-SUEY-LINK.mp3"></audio>
-
-<p>Spiders</p>
-<audio controls><source src="SPIDERS-LINK.mp3"></audio>
-
-<p>Mockingbird</p>
-<audio controls><source src="MOCKINGBIRD-LINK.mp3"></audio>
-
-<p>Stan</p>
-<audio controls><source src="STAN-LINK.mp3"></audio>
-
-<p>Snowman</p>
-<audio controls><source src="SNOWMAN-LINK.mp3"></audio>
-
-<a class="button" href="#top">⬆️ Back to Top</a>
-</div>
-
-</body>
-</html>
-margin: 0;
-    padding: 0;
-    background: linear-gradient(135deg, #ffb7d5, #c7a6ff);
-    font-family: "Comic Sans MS", cursive;
-    text-align: center;
-    color: #ffffff;
-}
-.container {
-    border: 6px dashed #ff99c8;
-    padding: 20px;
-    margin: 20px;
-    border-radius: 20px;
-    background-color: rgba(255,255,255,0.1);
-}
-.button {
-    background-color: #ff6ec7;
-    padding: 15px;
-    border-radius: 20px;
+  body {
+    background: linear-gradient(to bottom right, pink, purple, #004d00, blue);
+    font-family: 'Arial', sans-serif;
     color: white;
-    font-size: 20px;
-    text-decoration: none;
+    margin: 0;
+    padding: 0;
+  }
+  header {
+    text-align: center;
+    padding: 20px;
+    background-color: black;
+    border-bottom: 5px solid purple;
+  }
+  h1 { font-size: 2.5em; color: pink; }
+  .section {
+    margin: 30px auto;
+    padding: 20px;
+    border: 3px solid pink;
+    border-radius: 20px;
+    max-width: 600px;
+    background-color: rgba(0,0,0,0.5);
+  }
+  .stitch, .venom {
     display: block;
     margin: 20px auto;
-    width: 70%;
-}
-img {
-    animation: float 3s infinite ease-in-out;
-    width: 200px;
-}
-@keyframes float {
-  0% { transform: translateY(0px); }
-  50% { transform: translateY(-10px); }
-  100% { transform: translateY(0px); }
-}
-h1, h2 {
-    color: #ffffff;
-    text-shadow: 0px 0px 6px black;
-}
+    width: 150px;
+  }
+.stitch { animation: float 3s infinite ease-in-out; }
+  .venom { animation: bounce 2s infinite; }
+
+  @keyframes float {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-15px); }
+    100% { transform: translateY(0px); }
+  }
+  @keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-20px); }
+  }
+
+  ul { line-height: 1.6em; }
+  audio { width: 100%; margin-top: 10px; }
 </style>
 </head>
-
 <body>
 
-<!-- HOME PAGE -->
-<div class="container">
-<h1>For You, My Tatlı 💕</h1>
+<header>
+  <h1>Stitch & Venom 💖</h1>
+</header>
 
-<p>Hi my love… I made this just for you.</p>
-
-<a class="button" href="#voice">💗 Tap to Hear My Voice 💗</a>
-<a class="button" href="#reasons">💞 Reasons I Love You 💞</a>
-<a class="button" href="#songs">🎵 Your Favorite Songs 🎵</a>
-
+<div class="section" id="voice">
+  <h2>Voice Note 💕</h2>
+  <img src="YOUR-STITCH-LINK.png" class="stitch" alt="Stitch">
+  <img src="YOUR-VENOM-LINK.png" class="venom" alt="Venom">
+  <audio controls>
+    <source src="YOUR-VOICE-MP3-LINK.mp3" type="audio/mpeg">
+  </audio>
 </div>
 
-<!-- VOICE NOTE -->
-<div id="voice" class="container">
-<h2>My Voice Note for You 💌</h2>
+<div class="section" id="reasons">
+  <h2>Reasons I Love You 💖</h2>
+  <ul>
+    <li>Your eyes ✨</li>
+    <li>Your personality 💛</li>
+    <li>The way you talk to me 💬</li>
+    <li>The way you sing 🎶</li>
+    <li>Your interests 📚</li>
+    <li>…and so much more! 💕</li>
+  </ul>
+</div>
 
-<p>Tap the play button to hear me, my love.</p>
+<div class="section" id="songs">
+  <h2>Your Favorite Songs 🎵</h2>
+  <ul>
+    <li>Chop Suey</li>
+    <li>Spiders</li>
+    <li>Mockingbird</li>
+    <li>Stan</li>
+    <li>Snowman</li>
+  </ul>
+  <audio controls>
+    <source src="CHOP-SUEY-MP3-LINK.mp3" type="audio/mpeg">
+  </audio>
+  <audio controls>
+    <source src="SPIDERS-MP3-LINK.mp3" type="audio/mpeg">
+  </audio>
+  <audio controls>
+    <source src="MOCKINGBIRD-MP3-LINK.mp3" type="audio/mpeg">
+  </audio>
+  <audio controls>
+    <source src="STAN-MP3-LINK.mp3" type="audio/mpeg">
+  </audio>
+  <audio controls>
+    <source src="SNOWMAN-MP3-LINK.mp3" type="audio/mpeg">
+  </audio>
+</div>
 
-<audio controls>
-  <source src="YOUR-VOICE-NOTE-LINK-HERE.mp3" type="audio/mpeg">
-</audio>
-
-<p>I love you endlessly. I’m always here for you — no judgment, no leaving, just loyalty and love.</p>
-
-<a class="button" href="#top">⬆️ Back to Top</a>
+   
+</body>
+</html>
